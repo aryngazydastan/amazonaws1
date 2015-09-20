@@ -7,6 +7,7 @@ gem 'pg'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'cocaine'
+gem 'rails_12factor'
 
 # Use sqlite3 as the database for Active Record
 

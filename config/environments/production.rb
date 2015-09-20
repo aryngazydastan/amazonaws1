@@ -80,9 +80,9 @@ Rails.application.configure do
     :storage => :s3,
     :s3_protocol => 'http',
     :s3_credentials => {
-      :bucket => ENV['amazonaws1'],
-      :access_key_id => ENV['AKIAJF6GTO3JY4TR6C2A'],
-      :secret_access_key => ENV['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']
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 end

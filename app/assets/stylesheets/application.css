@@ -16,3 +16,15 @@
 table {
 	font-size: 5px;
 }
+
+.name {
+	width: 200px;
+}
+
+.field {
+	background: 50px gray;
+	font-size: 10px;
+	border-radius: 3px;
+	color: white;
+}
+

@@ -5,21 +5,30 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+
+    if params[:id].present?
+      set_post
+    else
+      @post = Post.new
+    end
   end
+
+  # GET /books/search
+  # GET /books/search.xml
 
   # GET /posts/1
   # GET /posts/1.json
-  def show
-  end
+  # def show
+  # end
 
   # GET /posts/new
-  def new
-    @post = Post.new
-  end
+  # def new
+    # @post = Post.new
+  # end
 
   # GET /posts/1/edit
-  def edit
-  end
+  # def edit
+  # end
 
   # POST /posts
   # POST /posts.json

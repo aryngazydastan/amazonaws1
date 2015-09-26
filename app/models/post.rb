@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
 	has_attached_file :file
+    validates_presence_of :name
+
 	do_not_validate_attachment_file_type :file, 
 			:storage => :s3,
             :bucket  => ENV['MY_BUCKET_NAME'],

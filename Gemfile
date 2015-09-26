@@ -8,6 +8,8 @@ gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
 gem 'cocaine'
 gem 'rails_12factor'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 # Use sqlite3 as the database for Active Record
 

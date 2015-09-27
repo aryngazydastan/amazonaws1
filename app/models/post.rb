@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
 	has_attached_file :file
-    validates_presence_of :name
+    validates_presence_of :name, :file
 
 	do_not_validate_attachment_file_type :file, 
 			:storage => :s3,
